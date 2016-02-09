@@ -1,0 +1,12 @@
+<html>
+<head><title>Time-Min</title></head>
+    <body><p id="demo"></p>
+        <script>
+        var currentdate = new Date(); 
+            var month=currentdate.getMinutes();
+            if(currentdate.getMinutes()< 10){month= "0" + month;}
+        var datetime = currentdate.getHours() + ":" + month;
+        document.getElementById("demo").innerHTML=datetime;
+        </script>
+    </body>
+</html>
